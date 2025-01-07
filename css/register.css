@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #e69900; /* Academic blue */
+    --text-color: #333; /* Dark grey for text */
+    --background-color: #f4f7fa; /* Light background */
+    --input-background: #ffffff; /* White input background */
+    --border-color: #ccc; /* Light grey border */
+    --button-color: #ffffff; /* Button text color */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding-top: 100px; /* Space for fixed header */
+}
+
+header {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: var(--text-color);
+    margin-left: 2rem;
+    font-size: 1.6rem;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.form-section {
+    margin-bottom: 3rem;
+}
+
+.form-section h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--button-color);
+    padding: 1.5rem 4rem;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
