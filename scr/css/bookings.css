@@ -1,0 +1,188 @@
+/* Body Styling */
+body {
+    font-family: 'Helvetica', sans-serif; /* Cleaner, more academic font */
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #3c3c3c; /* Darker text color for readability */
+    padding-top: 80px; /* Space for fixed header */
+    text-align: center;
+}
+
+/* Header Styling */
+/* Header Styling */
+header {
+    background-color: #d2b48c; /* Light brown header */
+    color: #fff;
+    padding: 15px 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex; /* Flexbox for header layout */
+    justify-content: center; /* Center everything in the header */
+    align-items: center; /* Vertically center the items */
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 28px; /* Larger title for visibility */
+    margin: 0; /* Remove margin for better alignment */
+}
+
+
+header nav {
+    display: flex; /* Flex container for nav items */
+    gap: 20px; /* Space between navigation links */
+    font-size: 16px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px; /* Add padding around the links for better clickability */
+    border-radius: 5px; /* Round the corners of the links */
+}
+
+header nav a:hover {
+    background-color: #c08e6e; /* Darken the background on hover */
+    text-decoration: underline;
+}
+
+/* Main Title */
+h1 {
+    margin-top: 120px; /* Adjusted to account for the fixed header */
+    font-size: 28px;
+    color: #3c3c3c;
+    font-weight: 600;
+}
+
+/* Booking List Container */
+.booking-list {
+    margin: 30px auto;
+    width: 75%; /* Slightly smaller for a cleaner look */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Styling for Each Booking */
+.booking-item {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.booking-item div {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.booking-item div strong {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Buttons within each booking card */
+.booking-item .actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.booking-item .actions a {
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #d2b48c; /* Light brown buttons */
+}
+
+.btn:hover {
+    background-color: #c08e6e; /* Slightly darker brown on hover */
+}
+
+.delete-btn {
+    background-color: #e57a00; /* Orange delete button */
+}
+
+.delete-btn:hover {
+    background-color: #ff9800; /* Orange hover effect */
+}
+
+/* Edit Section Styling */
+#edit-section {
+    width: 70%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#edit-section h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #3c3c3c;
+}
+
+#edit-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-section form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#edit-section form input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#edit-section form input:focus {
+    border-color: #d2b48c; /* Light brown focus effect */
+}
+
+#edit-section form button {
+    padding: 12px;
+    background-color: #d2b48c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#edit-section form button:hover {
+    background-color: #c08e6e; /* Darker brown on button hover */
+}
+
+/* Styling for message */
+#edit-section form input[type="text"] {
+    font-size: 14px;
+}
+
+/* Adding additional small elements for better readability and usability */
+input, button {
+    font-family: 'Arial', sans-serif;
+}
