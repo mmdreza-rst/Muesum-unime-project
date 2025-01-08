@@ -32,12 +32,12 @@ if (isset($_GET['edit_booking_id'])) {
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
-        $message = $_POST['message'];
+       
 
         $update_query = "UPDATE book_reservation SET 
                          name='$name', 
                          phone='$phone', 
-                         message='$message'
+                        
                          WHERE id = $booking_id AND email = '$email'";
                          
         if (mysqli_query($conn, $update_query)) {
@@ -80,7 +80,7 @@ $result = mysqli_query($conn, $sql);
                         <div><strong>Name:</strong> {$row['name']}</div>
                         <div><strong>Email:</strong> {$row['email']}</div>
                         <div><strong>Phone:</strong> {$row['phone']}</div>
-                        <div><strong>Message:</strong> {$row['message']}</div>
+                       
                         <div><strong>Booking Date:</strong> {$row['booking_date']}</div>
                         <div class='actions'>
                             <a href='bookings.php?edit_booking_id={$row['id']}#edit-section' class='btn'>Edit</a>
@@ -104,8 +104,7 @@ $result = mysqli_query($conn, $sql);
             <label for="phone">Phone:</label>
             <input type="text" name="phone" value="<?php echo $booking['phone']; ?>" required>
 
-            <label for="message">Message:</label>
-            <input type="text" name="message" value="<?php echo $booking['message']; ?>">
+           
 
             <button type="submit" class="btn">Update</button>
         </form>
