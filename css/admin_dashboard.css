@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 :root {
-    --primary-color: #ffa200f1; /* Teal */
-    --secondary-color: #83c5be; /* Light Teal */
-    --accent-color: #edf6f9; /* Light Gray */
-    --dark-color: #001219; /* Navy */
+    --primary-color: #ffa200f1; 
+    --secondary-color: #83c5be; 
+    --accent-color: #edf6f9; 
+    --dark-color: #001219; 
     --white-color: #ffffff;
     --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     --border-radius: 12px;
