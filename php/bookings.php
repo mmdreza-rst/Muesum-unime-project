@@ -1,13 +1,12 @@
 <?php
-session_start();  // Start the session at the very beginning of the file
+session_start();  
 
 require('DBconnection.php');
 
 // Check if the session variable for the user's email is set
 if (!isset($_SESSION['email'])) {
     echo "You must log in to view this page.";
-    exit();  // Stop the script if the user is not logged in
-}
+    exit();  
 
 $email = $_SESSION['email'];
 
@@ -16,7 +15,7 @@ if (isset($_GET['delete_booking_id'])) {
     $booking_id = $_GET['delete_booking_id'];
     $delete_query = "DELETE FROM book_reservation WHERE id = $booking_id AND email = '$email'";
     if (mysqli_query($conn, $delete_query)) {
-        header('Location: bookings.php');  // Redirect back to the bookings page
+        header('Location: bookings.php');  
         exit();
     } else {
         echo "Error deleting booking: " . mysqli_error($conn);
@@ -50,7 +49,7 @@ if (isset($_GET['edit_booking_id'])) {
     }
 }
 
-// Fetch all bookings for the logged-in user
+
 $sql = "SELECT * FROM book_reservation WHERE email='$email'";
 $result = mysqli_query($conn, $sql);
 ?>
