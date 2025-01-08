@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the current date for the booking
     $booking_date = date('Y-m-d'); // Format: YYYY-MM-DD
     
-    $message = !empty($_POST['message']) ? mysqli_real_escape_string($conn, $_POST['message']) : '';
+   
 
     // Modify the SQL query to include the booking date
     $sql = "INSERT INTO book_reservation (name, email, phone, message, booking_date) 
