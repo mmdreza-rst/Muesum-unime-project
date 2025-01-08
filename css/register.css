@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #e69900; /* Academic blue */
-    --text-color: #333; /* Dark grey for text */
-    --background-color: #f4f7fa; /* Light background */
-    --input-background: #ffffff; /* White input background */
-    --border-color: #ccc; /* Light grey border */
-    --button-color: #ffffff; /* Button text color */
+    --primary-color: #e69900; 
+    --text-color: #333; 
+    --background-color: #f4f7fa; 
+    --input-background: #ffffff; 
+    --border-color: #ccc; 
+    --button-color: #ffffff; 
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
