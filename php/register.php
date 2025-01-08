@@ -76,7 +76,7 @@ require('DBconnection.php');
         </form>
     </section>
 
-    <script src="js/script.js"></script>
+
 
 </body>
 </html>
